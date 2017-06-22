@@ -1,0 +1,4 @@
+<% common = "--format html --out=cucumber_results.html --format pretty --tags ~@wip --strict" %>
+default: <%= common %>
+
+test001: RUN_AGAINST=drtest001 DRIVER=selenium <%= common %>
